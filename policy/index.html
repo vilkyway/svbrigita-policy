@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zásady ochrany osobných údajov — Sv. Brigita</title>
+  <style>
+    :root {
+      --burgundy: #6E1F2A;
+      --gold: #B5872C;
+      --text: #2A2018;
+      --muted: #6B5B4A;
+      --bg: #FAF6EE;
+      --card: #FFFFFF;
+      --border: #E8DDC8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+    header {
+      background: linear-gradient(135deg, var(--burgundy), #8A2A36);
+      color: white;
+      padding: 48px 24px 56px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 0;
+      font-size: 14px;
+      opacity: 0.85;
+      font-style: italic;
+    }
+    main {
+      max-width: 720px;
+      margin: -32px auto 64px;
+      padding: 32px 24px;
+      background: var(--card);
+      border-radius: 14px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    }
+    h2 {
+      color: var(--burgundy);
+      font-size: 18px;
+      margin: 32px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2:first-of-type { margin-top: 0; }
+    p { margin: 8px 0 16px; }
+    ul { margin: 8px 0 16px; padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--burgundy); }
+    .meta {
+      font-size: 13px;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 24px;
+    }
+    .contact {
+      margin-top: 28px;
+      padding: 16px 20px;
+      background: rgba(181, 135, 44, 0.08);
+      border-left: 3px solid var(--gold);
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      padding: 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zásady ochrany osobných údajov</h1>
+    <p>Aplikácia Sv. Brigita</p>
+  </header>
+
+  <main>
+    <p class="meta">Posledná aktualizácia: 7. máj 2026</p>
+
+    <h2>1. Aké údaje zbierame</h2>
+    <p>
+      Pri prihlásení cez Google získavame od Google iba tvoju
+      <strong>emailovú adresu</strong> a <strong>jedinečné Google ID</strong>.
+      Žiadne iné osobné údaje (meno, fotografia, kontakty, lokácia) nezbierame.
+    </p>
+    <p>
+      Bez prihlásenia aplikácia <strong>nezbiera žiadne osobné údaje</strong>.
+    </p>
+
+    <h2>2. Aké údaje ukladáme</h2>
+    <p>Ak si prihlásený, ukladáme do našej databázy iba:</p>
+    <ul>
+      <li>počet dokončených modlitieb (ročná a 12-ročná)</li>
+      <li>dátum a čas poslednej dokončenej modlitby</li>
+      <li>tvoj Supabase user ID a email (na účely prihlásenia)</li>
+    </ul>
+    <p>
+      Tieto údaje slúžia výhradne na <strong>synchronizáciu pokroku medzi
+      tvojimi zariadeniami</strong>. Anonymní používatelia majú dáta uložené
+      iba lokálne v zariadení a nikam sa neodosielajú.
+    </p>
+
+    <h2>3. Komu údaje poskytujeme</h2>
+    <p>
+      Údaje neposkytujeme nikomu. <strong>Nepredávame</strong> ich,
+      <strong>nezdieľame</strong> s tretími stranami a <strong>nepoužívame
+      na reklamné ani analytické účely</strong>. Aplikácia neobsahuje žiadne
+      tracking SDK ani reklamné siete.
+    </p>
+
+    <h2>4. Kde sú údaje uložené</h2>
+    <p>
+      Údaje sú uložené v cloudovej databáze
+      <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>
+      (región EU – Frankfurt). Komunikácia medzi aplikáciou a databázou je
+      šifrovaná protokolom TLS. Prístup k databáze je obmedzený pravidlami
+      Row-Level Security – každý používateľ vidí výhradne svoje vlastné záznamy.
+    </p>
+
+    <h2>5. Audio nahrávky</h2>
+    <p>
+      Aplikácia umožňuje nahrávať vlastné audio nahrávky modlitieb. Tieto
+      nahrávky sa ukladajú <strong>výhradne lokálne v tvojom zariadení</strong>
+      a nikam sa neposielajú.
+    </p>
+
+    <h2>6. Tvoje práva</h2>
+    <p>V súlade s GDPR máš nasledujúce práva:</p>
+    <ul>
+      <li><strong>Prístup k údajom</strong> – môžeš si ich kedykoľvek vyžiadať e-mailom</li>
+      <li><strong>Oprava</strong> – ak sú údaje nesprávne, oprav ich v aplikácii alebo nás kontaktuj</li>
+      <li><strong>Zmazanie</strong> – v aplikácii môžeš v sekcii Nastavenia → Účet kliknúť na „Zmazať účet". Týmto sa trvalo odstráni tvoj účet aj všetky súvisiace údaje</li>
+      <li><strong>Prenosnosť</strong> – môžeš si vyžiadať export svojich údajov</li>
+      <li><strong>Námietka</strong> – proti spracovaniu môžeš podať námietku</li>
+    </ul>
+
+    <h2>7. Bezpečnosť</h2>
+    <p>
+      Heslá sa nikde neukladajú v čitateľnej forme – autentifikácia prebieha
+      cez Google OAuth alebo cez šifrované tokeny Supabase. Komunikácia je
+      vždy šifrovaná HTTPS/TLS.
+    </p>
+
+    <h2>8. Deti</h2>
+    <p>
+      Aplikácia nie je určená pre deti mladšie ako 13 rokov a vedome od nich
+      nezbierame žiadne osobné údaje.
+    </p>
+
+    <h2>9. Zmeny týchto zásad</h2>
+    <p>
+      Tieto zásady môžeme občas aktualizovať. Pri zmene aktualizujeme dátum
+      v hornej časti a v prípade významných zmien ťa informujeme priamo
+      v aplikácii alebo e-mailom.
+    </p>
+
+    <h2>10. Kontakt</h2>
+    <div class="contact">
+      <p style="margin: 0 0 8px;"><strong>Prevádzkovateľ:</strong> Jakub Vilček</p>
+      <p style="margin: 0;">
+        <strong>E-mail:</strong>
+        <a href="mailto:jakub.vilcek9@gmail.com">jakub.vilcek9@gmail.com</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Jakub Vilček · Aplikácia Sv. Brigita
+  </footer>
+</body>
+</html>
