@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -95,11 +94,17 @@
 
     <h2>1. Aké údaje zbierame</h2>
     <p>
-      Pri prihlásení cez Google získavame od Google iba tvoju
-      <strong>emailovú adresu</strong> a <strong>jedinečné Google ID</strong>.
-      Žiadne iné osobné údaje (meno, fotografia, kontakty, lokácia) nezbierame.
+      Pri prihlásení získavame iba tvoju <strong>emailovú adresu</strong>
+      a jedinečný identifikátor účtu. V závislosti od metódy prihlásenia ide o:
     </p>
+    <ul>
+      <li><strong>Apple Sign In</strong> – email (alebo súkromný relay email
+          ak si zvolíš „Hide My Email") + Apple ID</li>
+      <li><strong>Email a heslo</strong> – email; heslo nie je nikde uložené
+          v čitateľnej forme, iba ako bezpečný hash</li>
+    </ul>
     <p>
+      Žiadne iné osobné údaje (meno, fotografia, kontakty, lokácia) nezbierame.
       Bez prihlásenia aplikácia <strong>nezbiera žiadne osobné údaje</strong>.
     </p>
 
@@ -153,7 +158,7 @@
     <h2>7. Bezpečnosť</h2>
     <p>
       Heslá sa nikde neukladajú v čitateľnej forme – autentifikácia prebieha
-      cez Google OAuth alebo cez šifrované tokeny Supabase. Komunikácia je
+      cez Apple Sign In alebo cez šifrované tokeny Supabase. Heslá sú uložené iba ako bezpečný hash. Komunikácia je
       vždy šifrovaná HTTPS/TLS.
     </p>
 
