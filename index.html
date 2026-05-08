@@ -138,11 +138,19 @@
       Row-Level Security – každý používateľ vidí výhradne svoje vlastné záznamy.
     </p>
 
-    <h2>5. Audio nahrávky</h2>
+    <h2>5. Audio nahrávky a prístup k mikrofónu</h2>
     <p>
-      Aplikácia umožňuje nahrávať vlastné audio nahrávky modlitieb. Tieto
-      nahrávky sa ukladajú <strong>výhradne lokálne v tvojom zariadení</strong>
-      a nikam sa neposielajú.
+      Aplikácia žiada o prístup k <strong>mikrofónu</strong>
+      (oprávnenie <code>RECORD_AUDIO</code>) výhradne kvôli funkcii
+      „Nahrať vlastnú modlitbu" — používateľ si môže nahrať svoj hlas
+      pre osobné použitie.
+    </p>
+    <p>
+      Nahrávky sa ukladajú <strong>výhradne lokálne v tvojom zariadení</strong>
+      (priečinok dokumentov aplikácie) a <strong>neodosielajú sa nikam</strong> –
+      ani autorovi, ani na server, ani tretím stranám. Aplikácia nahráva audio
+      iba vtedy, keď používateľ explicitne stlačí tlačidlo nahrávania v sekcii
+      „Vlastné nahrávky".
     </p>
 
     <h2>6. Tvoje práva</h2>
